@@ -1,0 +1,193 @@
+@import '../../estilosGlobais/variaveis.module.scss';
+
+.cabecalho-logo-e-menu {
+    height: 58px;
+    background-color: $preto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0 $mobile-container;
+    position: relative;
+    .menu-hamburguer {
+        margin: auto 0;
+        .botao-hamburguer{
+            width: 18px;
+            height: 18px;
+            background-image: url('assets/imagens/menu-hamburguer.svg');
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-color: $preto;
+            border: none;
+        }
+        .lista-flutuante--esconder {
+            display: none;
+        }
+        .lista-flutuante--mostrar {
+            display: flex;
+        }
+        .lista-flutuante{
+            z-index: 2;
+            top: 0%;
+            background-color: #343A40;
+            padding: 15px $mobile-container;
+            right: 0%;
+            position: absolute;
+            flex-direction: column;
+            .botao-esconder-links{
+                width: 18px;
+                height: 17px;
+                margin-left: auto;
+                border: none;
+                background-color: inherit;
+                background-image: url('assets/imagens/marca-cruzada.svg');
+            }
+            .links{
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+                a{
+                    color: $branco;
+                    text-decoration: none;
+                    padding-bottom: 8px;
+                    margin-top: 8px;
+                    border-bottom: solid 2px $branco;
+                    font-weight: bold;
+                }
+                a:last-child {
+                    border-bottom: none;
+                    padding-bottom: 0;
+                }
+                a:hover{
+                    color: $verde
+                }
+            }
+        }
+    }
+}
+
+.cabecalho-campo-busca {
+    padding: $mobile-container;
+    background-color: $branco;
+    form {
+        display: flex;
+        justify-content: space-between;
+        input{
+            padding: 10px 0;
+            padding-left: 10px;
+            width: 70%;
+            border: solid 2px $preto;
+        }
+        input::placeholder{
+            font-size: 13px;
+        }
+        button {
+            width: 22%;
+            background-color: $branco;
+            border: solid 2px $preto;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        button:hover {
+            filter: brightness(0.8);
+        }
+        button::after {
+            content: 'Search';
+        }
+    }
+}
+
+@media screen and (min-width: $tamanho-tablet) {
+    header {
+        background-color: $preto;
+        display: flex;
+        .cabecalho-logo-e-menu {
+            justify-content: normal;
+            padding: 0 $tablet-container-cabecalho;
+            .menu-hamburguer {
+                .botao-hamburguer{
+                    display: none;
+                }
+                .lista-flutuante--esconder {
+                    display: flex;
+                }
+                .lista-flutuante--mostrar {
+                    display: flex;
+                }
+                .lista-flutuante{
+                    position: revert;
+                    padding: 0;
+                    background: none;
+                    margin-left: 18px;
+                    button {
+                        display: none;
+                    }
+                    .links{
+                        flex-direction: row;
+                        gap: 18px;
+                        a {
+                            border-bottom: none;
+                            margin: 0;
+                            font-size: 13px;
+                            font-weight: 400;
+                        }
+                        
+                    }
+                    
+                    
+                }
+            }
+        }
+    
+        .cabecalho-campo-busca {
+            width: 27vw;
+            padding: 0;
+            background-color: $preto;
+            margin: auto 0;
+            margin-left: auto;
+            margin-right: 22px;
+            form{
+                gap: 16px;
+                input {
+                    border: none;
+                }
+                button {
+                    padding: 0.5em;
+                    width: auto;
+                    background: none;
+                    border: solid 1px $branco;
+                    color: $branco;
+                }
+                button::after {
+                    content: 'Buscar';
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $tamanho-desktop) {
+    header{
+        .cabecalho-logo-e-menu {
+            .menu-hamburguer {
+                .lista-flutuante{
+                    margin-left: 2.5em;
+                    .links{
+                        gap: 2.5em;
+                        a{
+                            font-size: 16px;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .cabecalho-campo-busca {
+            form{
+                input::placeholder {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import "../../../estilosGlobais/variaveis.module.scss";
+
+.categoria {
+    width: 40vw;
+    .categoria-imagem{
+        height: 43vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .categoria-legenda {
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        p {
+            font-weight: 500;
+        }
+    }
+}
+
+@media screen and (min-width: $tamanho-tablet) {
+    .categoria {
+        width: 27.3vw;
+        cursor: pointer;
+        .categoria-imagem{
+            height: 20.5vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .categoria-legenda {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            p {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $tamanho-desktop) {
+    .categoria {
+        width: 11.1vw;
+        transition: 0.3s;
+        &:hover{
+            transform: translateY(-20px);
+            width: calc(11.1vw + 10px);
+            opacity: 0.8;
+        }
+        .categoria-imagem {
+            height: 10.9vw;
+        }
+    }
+}

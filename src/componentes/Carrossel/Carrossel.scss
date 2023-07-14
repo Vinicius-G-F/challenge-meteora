@@ -1,0 +1,113 @@
+@import "../../estilosGlobais/variaveis.module.scss";
+
+.swiper-button-prev, .swiper-button-next {
+    opacity: 0;
+}
+
+.swiper-button-prev {
+    left: 40px
+}
+
+.swiper-button-next {
+    right: 40px;
+}
+
+.swiper-pagination-bullet {
+    border-radius: 0;
+    width: 10%;
+    height: 3px;
+}
+
+.swiper-pagination-bullet-active{
+    background: white;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.imagem-carrossel-1, .imagem-carrossel-2, .imagem-carrossel-3 {
+    height: 110.6vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagem-carrossel-1 {
+    background-image: url('/assets/imagens/carousel/banner-1-mobile.png');
+}
+
+.imagem-carrossel-2 {
+    background-image: url('/assets/imagens/carousel/banner-2-mobile.png');
+}
+
+.imagem-carrossel-3 {
+    background-image: url('/assets/imagens/carousel/banner-3-mobile.png');
+}
+
+.carrossel {
+    position: relative;
+    z-index: 0;
+}
+
+.custom-prev{
+    position: absolute;
+    z-index: 1;
+    top: 47.5%;
+    left: 47px;
+    pointer-events: none;
+}
+.custom-next{
+    position: absolute;
+    z-index: 1;
+    top: 47.5%;
+    right: 47px;
+    pointer-events: none;
+}
+
+@media screen and (min-width: $tamanho-tablet) {
+    .imagem-carrossel-1, .imagem-carrossel-2, .imagem-carrossel-3 {
+        width: 100%;
+        height: 54vw;
+    }
+    .imagem-carrossel-1 {
+        background-image: url('/assets/imagens/carousel/Banner-1-tablet.png');
+    }
+    
+    .imagem-carrossel-2 {
+        background-image: url('/assets/imagens/carousel/Banner-2-tablet.png');
+    }
+    
+    .imagem-carrossel-3 {
+        background-image: url('/assets/imagens/carousel/Banner-3-tablet.png');
+    }
+
+    .swiper-pagination-bullet {
+        width: 3.9%;
+    }
+}
+
+@media screen and (min-width: $tamanho-desktop) {
+    .imagem-carrossel-1, .imagem-carrossel-2, .imagem-carrossel-3 {
+        width: 100%;
+        height: 28.8vw;
+        background-size: cover;
+        background-position: center;
+    }
+    .swiper-pagination-bullet-active, .swiper-pagination-bullet{
+        display: none;
+    }
+
+    .imagem-carrossel-1 {
+        background-image: url('/assets/imagens/carousel/Banner-1.png');
+    }
+    
+    .imagem-carrossel-2 {
+        background-image: url('/assets/imagens/carousel/Banner-2.png');
+    }
+    
+    .imagem-carrossel-3 {
+        background-image: url('/assets/imagens/carousel/Banner-3.png');
+    }
+}

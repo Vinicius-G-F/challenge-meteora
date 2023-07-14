@@ -1,0 +1,51 @@
+@import "../../estilosGlobais/estilosGlobais.scss";
+
+.enviarEmail {
+    margin: $mobile-container;
+    border: solid 1px $preto;
+    padding: 0 8px;
+    padding-top: 22px;
+    text-align: center;
+    div {
+        padding: 22px 0;
+        input {
+            padding: 8px;
+            border: solid 1px $preto;
+            border-right: none;
+            width: 68%;
+        }
+        button {
+            padding: 9px;
+            color: $branco;
+            background-color: $roxo;
+            cursor: pointer;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+@media screen and (min-width: $tamanho-tablet) {
+    .enviarEmail {
+        padding-top: 0;
+        padding: 40px 14%;
+        label {
+            font-size: 20px;
+        }
+        div {
+            padding: 0;
+            padding-top: 22px;
+            button {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $tamanho-desktop) {
+    .enviarEmail {
+        padding: 40px;
+        margin: 65px 355px;
+    }
+}

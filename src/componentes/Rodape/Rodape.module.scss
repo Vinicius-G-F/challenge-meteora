@@ -1,0 +1,23 @@
+@import '../../estilosGlobais/variaveis.module.scss';
+
+.rodape {
+    height: 74px;
+    background-color: $preto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        color: $branco;
+        text-align: center;
+        font-size: 13px;
+        width: 220px;
+    }
+}
+
+@media screen and (min-width: $tamanho-tablet) {
+    .rodape{
+        p {
+            width: 100%;
+        }
+    }
+}

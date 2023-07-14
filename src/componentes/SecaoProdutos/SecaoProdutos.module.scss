@@ -1,0 +1,44 @@
+@import "../../estilosGlobais/estilosGlobais.scss";
+
+.secaoProdutos {
+    h2 {
+        font-size: $mobile-fonte-titulo;
+        font-weight: 500;
+        text-align: center;
+        padding: $mobile-container;
+        color: $preto-fonte;
+    }
+}
+
+@media screen and (min-width: $tamanho-tablet) {
+    .secaoProdutos {
+        &__titulo--galeria{
+            margin-top: 22px;
+        }
+        div {
+            ul {
+                padding: $tablet-container-main;
+                display: flex;
+                flex-wrap: wrap;
+                gap: calc(100vw - calc(2 * $tablet-container-main) - 86vw);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $tamanho-desktop) {
+    .secaoProdutos {
+        &__titulo--galeria{
+            margin-top: 61px;
+        }
+        h2 {
+            font-size: 32px;
+        }
+        div {
+            ul {
+                padding: calc($desktop-container-main / 3) $desktop-container-main;
+                gap: calc((100vw - calc(2 * $desktop-container-main) - 71.5vw) / 2);
+            }
+        }
+    }
+}

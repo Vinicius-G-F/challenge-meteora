@@ -1,0 +1,41 @@
+.modal-cabecalho {
+    display: flex;
+    height: 65px;
+    padding: 0 16px;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 4px 4px 0px 0px;
+    border: 1px solid #DEE2E6;
+    background: #000;
+    color: white;
+    h2{
+        color: #FFF;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-right: auto;
+    }
+    img {
+        padding-right: 18px;
+    }
+    .modal-cabecalho-fechar {
+        cursor: pointer;
+    }
+    .modal-cabecalho-fechar:hover {
+        width: 26px;
+        height: 26px;
+        transform: translateX(6px);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .modal-cabecalho {
+        h2{
+            font-size: 19px;
+        }
+    }
+}

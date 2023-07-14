@@ -1,0 +1,10 @@
+<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="input-radio/checked-focus">
+<rect width="13" height="13" transform="translate(1 1)" fill="white"/>
+<g id="Radio Checked Focus">
+<circle id="Focus" cx="7.5" cy="7.5" r="7.5" fill="#C3C4FF"/>
+<circle id="Checked" cx="7.5" cy="7.5" r="6.5" fill="#9353FF"/>
+<circle id="Checked_2" cx="7.5" cy="7.5" r="3.5" fill="#75D7F0"/>
+</g>
+</g>
+</svg>

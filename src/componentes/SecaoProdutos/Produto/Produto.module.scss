@@ -1,0 +1,64 @@
+@import '../../../estilosGlobais/variaveis.module.scss';
+
+.produto {
+    padding: 0 $mobile-container;
+    .produto-imagem {
+        height: 105vw;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    .produto-info {
+        padding: 22px;
+        border: solid 1px $cinza;
+        margin-bottom: 22px;
+        h3 {
+            font-weight: bold;
+        }
+        p, h3, h4 {
+            margin-bottom: 22px;
+            color: $preto-fonte;
+        }
+        h4 {
+            font-weight: bold;
+        }
+        button {
+            font-weight: 500;
+            padding: 10px;
+            color: $branco;
+            background-color: $roxo;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        button:hover {
+            opacity: 0.8;
+            box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+@media screen and (min-width: $tamanho-tablet) {
+    .produto {
+        padding: 0;
+        width: 43vw;
+        .produto-imagem {
+            background-size: 78vw;
+            height: 78vw;
+        }
+        .produto-info {
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $tamanho-desktop) {
+    .produto {
+        width: 23.4vw;
+        .produto-imagem {
+            height: 27vw;
+            background-size: cover;
+        }
+    }
+}
