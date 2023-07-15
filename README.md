@@ -6,7 +6,7 @@ aquilo que foi aprendido durante os cursos da escola de programação da Alura.
 | 🪧 Vitrine Dev |                                                                                                                                            |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | ✨ Nome        | **Meteora 2023** - Challenge Alura                                                                                                         |
-| 🏷️ Tecnologias | React, sass, html, react-routee-dom, TypeScript                                                                                            |
+| 🏷️ Tecnologias | React, TypeScript, scss, html                                                                                            |
 | 🚀 URL         | **https://challenge-meteora.vercel.app/**                                                                                                  |
 | 🔥 Desafio     | [**Design no Figma**](https://www.figma.com/file/2TLgt8UjsWUViWlmpXu5Fz/Challenge-Front-end-%7C-Loja-Meteora?node-id=2386%3A2430&mode=dev) |
 
