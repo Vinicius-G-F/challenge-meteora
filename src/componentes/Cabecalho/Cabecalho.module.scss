@@ -14,7 +14,7 @@
         .botao-hamburguer{
             width: 18px;
             height: 18px;
-            background-image: url('assets/imagens/menu-hamburguer.svg');
+            background-image: url('/assets/imagens/menu-hamburguer.svg');
             background-repeat: no-repeat;
             background-position-y: center;
             background-color: $preto;
@@ -40,7 +40,7 @@
                 margin-left: auto;
                 border: none;
                 background-color: inherit;
-                background-image: url('assets/imagens/marca-cruzada.svg');
+                background-image: url('/assets/imagens/marca-cruzada.svg');
             }
             .links{
                 display: flex;
