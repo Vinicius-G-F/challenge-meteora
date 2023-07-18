@@ -3,11 +3,11 @@
 Projeto ministrado pela Alura, feito com o propósito de desafiar e instigar os alunos a praticarem
 aquilo que foi aprendido durante os cursos da escola de programação da Alura.
 
-| 🪧 Vitrine Dev |                                                                                                                                            |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| ✨ Nome        | **Meteora 2023** - Challenge Alura                                                                                                         |
-| 🏷️ Tecnologias | React, TypeScript, scss, html                                                                                            |
-| 🚀 URL         | **https://challenge-meteora.vercel.app/**                                                                                                  |
+| 🪧 Vitrine Dev |  |
+| ------------- | - |
+| ✨ Nome        | **Meteora 2023** - Challenge Alura |
+| 🏷️ Tecnologias | React, TypeScript, scss, html |
+| 🚀 URL         | **https://challenge-meteora.vercel.app/** |
 | 🔥 Desafio     | [**Design no Figma**](https://www.figma.com/file/2TLgt8UjsWUViWlmpXu5Fz/Challenge-Front-end-%7C-Loja-Meteora?node-id=2386%3A2430&mode=dev) |
 
 ![](./public/assets/imagens/carousel/Banner-1.png#vitrinedev)
