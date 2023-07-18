@@ -10,7 +10,6 @@ aquilo que foi aprendido durante os cursos da escola de programação da Alura.
 | 🚀 URL         | **https://challenge-meteora.vercel.app/**                                                                                                  |
 | 🔥 Desafio     | [**Design no Figma**](https://www.figma.com/file/2TLgt8UjsWUViWlmpXu5Fz/Challenge-Front-end-%7C-Loja-Meteora?node-id=2386%3A2430&mode=dev) |
 
-\public\assets\imagens\carousel\Banner-1.png
 ![](./public/assets/imagens/carousel/Banner-1.png#vitrinedev)
 
 <div id="challenge"></div>
